@@ -409,7 +409,15 @@
   }
 }
 
+/* Hidden until GSAP choreographs the hero entrance (see use-hero-entrance). */
+.hero-pending {
+  opacity: 0;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .hero-pending {
+    opacity: 1;
+  }
   html {
     scroll-behavior: auto;
   }
